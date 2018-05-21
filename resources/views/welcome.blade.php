@@ -81,6 +81,11 @@
                 <div class="title m-b-md">
                     {{ $brag->random()->description }}
                 </div>
+
+                <div class="links">
+                    <a href="">Post to Facebook</a>
+                    <a href="">Post to Twitter</a>
+                </div>
             </div>
 
         </div>
