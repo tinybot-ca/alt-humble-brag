@@ -9,7 +9,8 @@ class BragController extends Controller
 {
     public function index()
     {
-        $brag = Brag::all();
+        $brags = Brag::all();
+        $brag = $brags->random();
 
         // dd($brag);
 

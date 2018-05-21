@@ -79,12 +79,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    {{ $brag->random()->description }}
+                    {{ $brag->description }}
                 </div>
 
                 <div class="links">
                     <a href="">Post to Facebook</a>
-                    <a href="">Post to Twitter</a>
+                <a href="https://twitter.com/intent/tweet?text={{ urlencode($brag->description) }}">Post to Twitter</a>
                 </div>
             </div>
 
