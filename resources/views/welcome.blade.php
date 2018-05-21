@@ -83,8 +83,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="">Post to Facebook</a>
-                <a href="https://twitter.com/intent/tweet?text={{ urlencode($brag->description) }}">Post to Twitter</a>
+                    <a href="">Random</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=test.com&t={{ urlencode($brag->description) }}">Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text={{ urlencode($brag->description) }}">Twitter</a>
                 </div>
             </div>
 

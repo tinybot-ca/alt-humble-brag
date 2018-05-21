@@ -12,8 +12,6 @@ class BragController extends Controller
         $brags = Brag::all();
         $brag = $brags->random();
 
-        // dd($brag);
-
         return view('welcome', compact('brag'));
     }
 }
