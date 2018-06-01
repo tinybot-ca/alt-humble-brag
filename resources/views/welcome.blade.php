@@ -55,11 +55,11 @@
 <script>
 
     function twitter(brag) {
-        window.open("https://twitter.com/intent/tweet?text=" + brag + "+%23AltHumbleBrag+althumblebrag.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=300,width=600,height=450");
+        window.open("https://twitter.com/intent/tweet?text=" + brag + "+%23AltHumbleBrag+alt-humble-brag.tinybot.ca", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=300,width=600,height=450");
     }
 
     function facebook(brag) {
-        window.open("https://www.facebook.com/share.php?u=https://althumblebrag.com&title=+%23AltHumbleBrag&mobile_iframe=true&description=&quote=" + brag, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=300,width=600,height=450");
+        window.open("https://www.facebook.com/share.php?u=https://alt-humble-brag.tinybot.ca&title=+%23AltHumbleBrag&mobile_iframe=true&description=&quote=" + brag, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=300,width=600,height=450");
     }
 
 </script>
