@@ -9,7 +9,7 @@
 
         <meta property="og:url"                content="https://alt-humble-brag.tinybot.ca" />
         <meta property="og:title"              content="Alt Humble Brag" />
-        <meta property="og:description"        content="Alt Humble Brag Generator" />
+        <meta property="og:description"        content="Alternative humble brag generator" />
         <meta property="og:image"              content="{{ asset('images/tinybot-icon.png') }}" />
         <meta property="og:image:secure_url"   content="{{ asset('images/tinybot-icon.png') }}" />
 
@@ -42,9 +42,9 @@
                 </div>
 
                 <div class="__links">
-                    <a class="btn btn-primary btn-lg" href="">Next</a>
-                    <a class="btn btn-primary btn-lg" onclick="facebook('{{ urlencode($brag->description) }}')" href="">Facebook</a>
-                    <a class="btn btn-primary btn-lg" onclick="twitter('{{ urlencode($brag->description) }}')" href="">Twitter</a>
+                    <button id="next" class="btn btn-primary btn-lg" href="">Next</button>
+                    <button class="btn btn-primary btn-lg" onclick="facebook('{{ urlencode($brag->description) }}')">Facebook</button>
+                    <button class="btn btn-primary btn-lg" onclick="twitter('{{ urlencode($brag->description) }}')">Twitter</button>
                 </div>
             </div>
 
