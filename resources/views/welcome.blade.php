@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="__links">
-                    <button id="next" class="btn btn-primary btn-lg" href="">Next</button>
+                    <a class="btn btn-primary btn-lg" href="">Next</a>
                     <button class="btn btn-primary btn-lg" onclick="facebook('{{ urlencode($brag->description) }}')">Facebook</button>
                     <button class="btn btn-primary btn-lg" onclick="twitter('{{ urlencode($brag->description) }}')">Twitter</button>
                 </div>
