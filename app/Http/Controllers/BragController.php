@@ -7,6 +7,11 @@ use App\Brag;
 
 class BragController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index']);
+    }
+
     public function index()
     {
         $brags = Brag::all();
@@ -14,4 +19,67 @@ class BragController extends Controller
 
         return view('welcome', compact('brag'));
     }
+
+    public function admin()
+    {
+        $brags = Brag::all();
+
+        return view('admin', compact('brags'));
+    }
+
+    public function edit(Brag $brag)
+    {
+        return view('edit', compact('brag'));
+    }
+
+    public function update(Brag $brag)
+    {
+        $this->validate(request(), [
+            'description' => 'required'
+        ]);
+
+        $brag->update(request(['description']));
+
+        session()->flash('message', 'Record has been updated.');
+
+        return redirect('/admin');
+    }
+
+    public function create()
+    {
+        return view('create');
+    }
+
+    public function store()
+    {
+        $this->validate(request(), [
+            'description' => 'required'
+        ]);
+
+        $brag = Brag::create([
+            'user_id' => auth()->id(),
+            'description' => request('description')
+        ]);
+
+        session()->flash('message', 'New record saved.');
+
+        return redirect('/admin');
+    }
+
+    public function delete(Brag $brag)
+    {
+        return view('delete', compact('brag'));
+    }
+
+    public function destroy(Brag $brag)
+    {
+        $brag->delete();
+
+        session()->flash('message', 'Record deleted.');
+
+        return redirect('/admin');
+    }
+
+
+
 }

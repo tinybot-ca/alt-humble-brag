@@ -48,3 +48,7 @@ html, body {
 .m-b-md {
     margin-bottom: 30px;
 }
+
+.grid-bg {
+    background-color: #e8eff7;
+}

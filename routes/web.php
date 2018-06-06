@@ -12,6 +12,13 @@
 */
 
 Route::get('/', 'BragController@index');
+Route::get('/admin', 'BragController@admin');
+Route::get('/{brag}/edit', 'BragController@edit');
+Route::patch('/brags/{brag}', 'BragController@update');
+Route::get('/brags/create', 'BragController@create');
+Route::post('/brags', 'BragController@store');
+Route::get('/brags/{brag}/delete', 'BragController@delete');
+Route::delete('/brags/{brag}/delete', 'BragController@destroy');
 
 Auth::routes();
 
