@@ -6,7 +6,9 @@
         <div class="col-md-8">
 
             <div class="card">
-                <div class="card-header">Admin Dashboard</div>
+                <div class="card-header">
+                    <h4>Admin Dashboard</h4>
+                </div>
 
                 <ul class="list-group list-group-flush">
 

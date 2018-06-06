@@ -11,7 +11,9 @@
             <!-- Delete Brag Card -->
             <div class="card">
 
-                <div class="card-header">Delete Record</div>
+                <div class="card-header">
+                    <h4>Delete Record</h4>
+                </div>
 
                 <!-- Action Buttons -->
                 <ul class="list-group list-group-flush">

@@ -8,12 +8,14 @@
 
             <!-- New Brag Card -->
             <div class="card">
-                <div class="card-header">New Record</div>
+                <div class="card-header">
+                    <h4>New Record</h4>
+                </div>
 
                 <!-- Action Buttons -->
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item grid-bg">
-                        <a class="btn btn-outline-primary btn-sm " href="{{ url()->previous() }}">Cancel</a>
+                        <a class="btn btn-outline-primary btn-sm" href="{{ url()->previous() }}">Cancel</a>
                     </li>
                 </ul>
 

@@ -8,7 +8,9 @@
 
             <!-- Edit Brag Card -->
             <div class="card">
-                <div class="card-header">Edit Record</div>
+                <div class="card-header">
+                        <h4>Edit Record</h4>
+                </div>
 
                 <!-- Action Buttons -->
                 <ul class="list-group list-group-flush">
