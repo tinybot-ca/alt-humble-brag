@@ -13,7 +13,7 @@
                 <!-- Action Buttons -->
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item grid-bg">
-                        <a class="btn btn-outline-primary btn-sm " href="{{ url()->previous() }}">Cancel</a>
+                        <a class="btn btn-outline-primary btn-sm " href="/admin">Cancel</a>
                         <a class="btn btn-outline-primary btn-sm " href="/brags/{{ $brag->id }}/delete">Delete</a>
                     </li>
                 </ul>
