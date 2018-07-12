@@ -7,9 +7,9 @@
 
         <title>Alt Humble Brag</title>
 
-        <meta property="og:url"                content="https://alt-humble-brag.tinybot.ca" />
-        <meta property="og:title"              content="Alt Humble Brag" />
-        <meta property="og:description"        content="Alternative humble brag generator" />
+        <meta property="og:url"                content="https://betterhumblebrags.com" />
+        <meta property="og:title"              content="Better Humble Brags" />
+        <meta property="og:description"        content="Better Humble Brag Generator" />
         <meta property="og:image"              content="{{ asset('images/tinybot-icon.png') }}" />
         <meta property="og:image:secure_url"   content="{{ asset('images/tinybot-icon.png') }}" />
 
