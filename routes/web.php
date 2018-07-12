@@ -20,6 +20,8 @@ Route::post('/brags', 'BragController@store');
 Route::get('/brags/{brag}/delete', 'BragController@delete');
 Route::delete('/brags/{brag}/delete', 'BragController@destroy');
 
+Route::get('/imgtest', 'BragController@imgtest');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

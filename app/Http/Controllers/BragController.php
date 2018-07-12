@@ -80,6 +80,15 @@ class BragController extends Controller
         return redirect('/admin');
     }
 
+    public function imgtest()
+    {
+        $img = Image::make('public/humblebrag.png');
 
+        $img->text('The quick brown fox jumps over the lazy dog.');
+
+        $img->save('public/test.png');
+
+        return view('image');
+    }
 
 }
